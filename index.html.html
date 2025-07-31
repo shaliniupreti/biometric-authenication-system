@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biosecure - Biometric Authentication</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold mr-3">BS</div>
+                <h1 class="text-xl font-bold text-gray-800">BioSecure</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Features</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Security</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Multi-Factor Biometric Authentication</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Secure your identity with cutting-edge biometric technology combining fingerprint, facial, and voice recognition.</p>
+            </div>
+            
+            <!-- Authentication Panel -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="grid md:grid-cols-3 gap-0">
+                    <!-- Fingerprint Authentication -->
+                    <div class="p-6 border-r border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M6.625 2.655A9 9 0 0119.5 10a1.5 1.5 0 01-3 0 6 6 0 00-9.375-5.158v1.246a.75.75 0 01-1.5 0V3.5a.75.75 0 011.5 0v1.155zM3.5 10a1.5 1.5 0 013 0v5.5a1.5 1.5 0 01-3 0V10zm6 0a1.5 1.5 0 013 0v1.5a1.5 1.5 0 01-3 0V10zm6 0a1.5 1.5 0 013 0v5.5a1.5 1.5 0 01-3 0V10z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Fingerprint Scan</h3>
+                        </div>
+                        
+                        <div class="flex justify-center mb-6">
+                            <div class="biometric-scanner w-48 h-48 rounded-full flex items-center justify-center relative">
+                                <svg class="fingerprint-svg w-32 h-32" viewBox="0 0 100 100">
+                                    <path d="M45.5,20 C45.5,18.067 47.067,16.5 49,16.5 C50.933,16.5 52.5,18.067 52.5,20 L52.5,35 C52.5,42.733 59.267,49 67,49 C74.733,49 81,55.267 81,63 C81,70.733 74.733,77 67,77 C59.267,77 53,70.733 53,63 L53,51 C53,49.067 51.433,47.5 49.5,47.5 C47.567,47.5 46,49.067 46,51 L46,63 C46,73.493 54.507,82 65,82 C75.493,82 84,73.493 84,63 C84,52.507 75.493,44 65,44 C56.49,44 49.5,37.01 49.5,28.5 L49.5,20 Z M20,63 C20,73.493 28.507,82 39,82 C49.493,82 58,73.493 58,63 L58,51 C58,49.067 56.433,47.5 54.5,47.5 C52.567,47.5 51,49.067 51,51 L51,63 C51,70.733 44.733,77 37,77 C29.267,77 23,70.733 23,63 C23,55.267 29.267,49 37,49 C39.833,49 42.5,50 44.5,51.5 C45.3,52.1 46.433,51.933 47,51.133 C47.6,50.333 47.433,49.2 46.633,48.633 C44.167,46.833 40.733,46 37,46 C26.507,46 18,54.507 18,65 C18,75.493 26.507,84 37,84 C47.493,84 56,75.493 56,65 L56,63 C56,60.5 58,58.5 60.5,58.5 C63,58.5 65,60.5 65,63 L65,65 C65,78.254 50.254,93 37,93 C23.746,93 9,78.254 9,65 C9,51.746 23.746,37 37,37 C40.667,37 44.167,38 47.333,39.667 C48.233,40.233 48.433,41.433 47.867,42.333 C47.3,43.233 46.1,43.433 45.2,42.867 C42.5,41.433 39.667,40.5 37,40.5 C28.707,40.5 22,47.207 22,55.5 C22,63.793 28.707,70.5 37,70.5 C45.293,70.5 52,63.793 52,55.5 L52,35 C52,25.507 43.493,17 33,17 C22.507,17 14,25.507 14,36 C14,46.493 22.507,55 33,55 C34.933,55 36.5,53.433 36.5,51.5 C36.5,49.567 34.933,48 33,48 C25.85,48 20,42.15 20,35 C20,27.85 25.85,22 33,22 C40.15,22 46,27.85 46,35 L46,63 C46,68.523 41.523,73 36,73 C30.477,73 26,68.523 26,63 C26,57.477 30.477,53 36,53 C37.933,53 39.5,51.433 39.5,49.5 C39.5,47.567 37.933,46 36,46 C29.383,46 24,51.383 24,58 C24,64.617 29.383,70 36,70 C42.617,70 48,64.617 48,58 L48,20 C48,15.033 43.967,11 39,11 C34.033,11 30,15.033 30,20 L30,35 C30,40.523 25.523,45 20,45 C14.477,45 10,40.523 10,35 C10,29.477 14.477,25 20,25 C21.933,25 23.5,23.433 23.5,21.5 C23.5,19.567 21.933,18 20,18 C11.715,18 5,24.715 5,33 C5,41.285 11.715,48 20,48 C28.285,48 35,41.285 35,33 L35,20 C35,12.833 41.833,6 49,6 C56.167,6 63,12.833 63,20 L63,35 C63,38.067 60.067,41 57,41 C53.933,41 51,38.067 51,35 L51,20 C51,17.067 48.933,15 46,15 C43.067,15 41,17.067 41,20 L41,30 C41,33.033 38.033,36 35,36 C31.967,36 29,33.033 29,30 L29,20 C29,11.716 36.716,4 45,4 C53.284,4 61,11.716 61,20 Z" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <svg class="progress-ring w-48 h-48" viewBox="0 0 48 48">
+                                        <circle class="progress-ring-circle" stroke="#ffffff" stroke-width="2" fill="transparent" r="20" cx="24" cy="24" stroke-dasharray="126" stroke-dashoffset="126"></circle>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button id="fingerprint-btn" class="w-full py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition duration-200">
+                            Scan Fingerprint
+                        </button>
+                    </div>
+                    
+                    <!-- Facial Recognition -->
+                    <div class="p-6 border-r border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Facial Recognition</h3>
+                        </div>
+                        
+                        <div class="flex justify-center mb-6">
+                            <div class="relative w-48 h-48 rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+                                <video id="face-video" class="w-full h-full object-cover" autoplay playsinline></video>
+                                <canvas id="face-canvas" class="face-mesh" width="480" height="480"></canvas>
+                                <img id="face-placeholder" src="https://placehold.co/480x480?text=Face+Not+Detected" alt="Placeholder for facial recognition view showing camera feed with face detection overlay" class="absolute w-full h-full object-cover" />
+                            </div>
+                        </div>
+                        
+                        <button id="face-btn" class="w-full py-2 px-4 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition duration-200">
+                            Start Face Scan
+                        </button>
+                    </div>
+                    
+                    <!-- Voice Authentication -->
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M7 4a3 3 0 016 0v4a3 3 0 11-6 0V4zm4 10.93A7.001 7.001 0 0017 8a1 1 0 10-2 0A5 5 0 015 8a1 1 0 00-2 0 7.001 7.001 0 006 6.93V17H6a1 1 0 100 2h8a1 1 0 100-2h-3v-2.07z" clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-gray-800">Voice Authentication</h3>
+                        </div>
+                        
+                        <div class="flex justify-center mb-6">
+                            <div class="w-48 h-48 bg-gray-100 rounded-lg flex flex-col items-center justify-center p-4">
+                                <div class="relative w-full h-32 mb-4 flex items-end justify-center space-x-1">
+                                    <div class="voice-wave w-2 bg-blue-400 rounded-t" style="height: 20px;"></div>
+                                    <div class="voice-wave w-2 bg-blue-400 rounded-t" style="height: 30px;"></div>
+                                    <div class="voice-wave w-2 bg-blue-400 rounded-t" style="height: 40px;"></div>
+                                    <div class="voice-wave w-2 bg-blue-400 rounded-t" style="height: 30px;"></div>
+                                    <div class="voice-wave w-2 bg-blue-400 rounded-t" style="height: 20px;"></div>
+                                </div>
+                                <p id="voice-status" class="text-gray-500 text-sm text-center">Press button and say "My voice is my password"</p>
+                            </div>
+                        </div>
+                        
+                        <button id="voice-btn" class="w-full py-2 px-4 bg-green-500 hover:bg-green-600 text-white rounded-lg transition duration-200">
+                            Start Voice Scan
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Results Panel -->
+                <div class="p-6 bg-gray-50 border-t border-gray-200">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div>
+                            <h3 class="font-semibold text-gray-800 mb-2">Authentication Status</h3>
+                            <div id="auth-status" class="flex items-center">
+                                <div class="w-4 h-4 bg-gray-300 rounded-full mr-2"></div>
+                                <span class="text-gray-600">Waiting for verification...</span>
+                            </div>
+                            <div id="auth-steps" class="mt-3 text-sm text-gray-500">
+                                <div class="flex items-center mb-1">
+                                    <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
+                                    <span>Fingerprint: Not scanned</span>
+                                </div>
+                                <div class="flex items-center mb-1">
+                                    <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
+                                    <span>Face: Not recognized</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 rounded-full bg-gray-200 mr-2"></div>
+                                    <span>Voice: Not verified</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="verify-btn" class="mt-4 md:mt-0 py-2 px-6 bg-gray-800 hover:bg-gray-900 text-white rounded-lg transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            Complete Verification
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-6 mt-10">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            <p>&copy; 2023 BioSecure. All rights reserved.</p>
+            <p class="mt-2">Advanced biometric authentication powered by AI technology.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
